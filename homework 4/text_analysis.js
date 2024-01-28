@@ -9,8 +9,7 @@ function findMostFrequentChar(inputString) {
   for (var i = 0; i < inputString.length; i++) {
       var currentChar = inputString[i];
 
-      // Проверка наличия символа в specialCharacters
-      if (specialCharacters.indexOf(currentChar) === -1) {
+      if (specialCtharacters.indexOf(currentChar) === -1) {
           if (charFrequency[currentChar]) {
               charFrequency[currentChar]++;
           } else {
