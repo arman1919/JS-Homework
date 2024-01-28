@@ -1,6 +1,6 @@
 const { log } = require('console');
 const fs = require('fs');
-const filePath = './text file analysis/text.txt';
+const filePath = './homework 4/text.txt';
 
 let specialCharacters = ['.', ',', ':', ';', '!', '?', '\'', '"', '-', '_', '(', ')', '{', '}', '[', ']', '+', '*', '/', '%', '=', '==', '!=', '<', '>', '<=', '>=', '&&', '||', '!', '@', '#', '$', '&', '*', '~', '^', ' ', '\t', '\n', '\r'];
 function findMostFrequentChar(inputString) {
@@ -9,7 +9,7 @@ function findMostFrequentChar(inputString) {
   for (var i = 0; i < inputString.length; i++) {
       var currentChar = inputString[i];
 
-      if (specialCtharacters.indexOf(currentChar) === -1) {
+      if (specialCharacters.indexOf(currentChar) === -1) {
           if (charFrequency[currentChar]) {
               charFrequency[currentChar]++;
           } else {
